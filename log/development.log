@@ -835,3 +835,31 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/articles/new" for 127.0.0.1 at 2018-07-01 01:51:01 +0300
+  
+SyntaxError (/home/deniom/luxery/app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ticle).permit(:title, :text, :)
+...                              ^):
+  
+app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 01:51:27 +0300
+  
+SyntaxError (/home/deniom/luxery/app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ticle).permit(:title, :text, :)
+...                              ^):
+  
+app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 01:51:40 +0300
+  
+SyntaxError (/home/deniom/luxery/app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ticle).permit(:title, :text, :)
+...                              ^):
+  
+app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 01:51:48 +0300
+  
+SyntaxError (/home/deniom/luxery/app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ticle).permit(:title, :text, :)
+...                              ^):
+  
+app/controllers/articles_controller.rb:20: syntax error, unexpected ')', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
