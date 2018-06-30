@@ -1,0 +1,19 @@
+<h1>Список статей</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Просмотр', article_path(article) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Новая статья', new_article_path %>
