@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'users/index'
   get 'main/index'
   resources :articles #стать сайта
   root 'main#index'
