@@ -1108,3 +1108,192 @@ Migrating to Article (20180701123324)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
 Migrating to Article (20180701123324)
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 16:58:33 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 16:58:38 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 16:58:40 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-07-01 16:58:41 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 16:58:43 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rxv/EIj64hSUCJGLFFky1s1sWM9Di8eePWFjd05de7imkB2Grl/tC7oTP+Kblay2KYdiTCIIT6sn/dvaBqxOKw==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameters: :adres, :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Article:0x00007f60f46137b0>
+Did you mean?  adres
+               adres?
+               adres=):
+  
+app/controllers/articles_controller.rb:37:in `create'
+Started POST "/__web_console/repl_sessions/48ffbdab442a159b92351a671f664dab/trace" for 127.0.0.1 at 2018-07-01 16:59:30 +0300
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 17:00:23 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rxv/EIj64hSUCJGLFFky1s1sWM9Di8eePWFjd05de7imkB2Grl/tC7oTP+Kblay2KYdiTCIIT6sn/dvaBqxOKw==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameters: :adres, :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.3ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Article:0x00007f60fd916710>
+Did you mean?  adres
+               adres?
+               adres=):
+  
+app/controllers/articles_controller.rb:37:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 17:00:29 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/s4qivRSuMLHWGlqjEamhZf7L4XZQ1eSX0TwYCIgMOa8qfwV+yUX8dqzJ2J3Jymw1OhfjVM8pmi/j1SxPk0FA==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameters: :adres, :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Article:0x00007f61082673f0>
+Did you mean?  adres
+               adres?
+               adres=):
+  
+app/controllers/articles_controller.rb:37:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:00:33 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-07-01 17:00:35 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 17:00:36 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cY4zVGd6AJjnpKa0lz19Wvpaqnln+hn8rHf74gdtadKQBdHCQd8Ph8m/CN0Y8eM6HrGQ+gZ5kcm260NPT5xcQQ==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameters: :adres, :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Article:0x00007f61100212a0>
+Did you mean?  adres
+               adres?
+               adres=):
+  
+app/controllers/articles_controller.rb:37:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 17:00:51 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sw3Wqdn8eVpkJhEig8Sg4jjip/6SaGzQOoCvyRSPiGumBEnzpcGn5qhRvBqgKSbe7e7qPrBBkxfRA4FaUP48vA==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.1ms)
+
+
+  
+NoMethodError (undefined method `address' for #<Article:0x00007f60fca2d528>
+Did you mean?  adres
+               adres?
+               adres=):
+  
+app/controllers/articles_controller.rb:37:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:01:02 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 55ms (Views: 47.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:01:19 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 56ms (Views: 51.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-07-01 17:01:21 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 17:01:23 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOmSha3tXFqivwp7oILNEUle5C/gizofzyQN+Ju24V7RYnATi0hTRYykpBIvTlNxrbXerIEIsirVuLVV00fUzQ==", "article"=>{"title"=>"", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :numder
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:37
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:01:23 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.3ms)
+
+
