@@ -9,7 +9,7 @@ class CreateArticles < ActiveRecord::Migration[5.2]
       t.string :photo
       t.integer :price
       t.string :adres
-      t.string :numder
+      t.string :number
 
       t.timestamps
     end

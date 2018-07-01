@@ -1009,3 +1009,102 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/articles/new" for 127.0.0.1 at 2018-07-01 15:22:32 +0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 86ms (Views: 60.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:22:36 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SPJR2Smj2Ni6a3KMTmMyk2yd5e2cFDJFQ15iDEo5LC6pebNPDwbXx5Rw3OXBr6zziHbfbv2XunBZwtqhAsgZvQ==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:22:50 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:25:20 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:27:14 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:27:58 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-07-01 15:28:02 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4WIrlDLPaO/s98aSU/nfao3+OmQl4ewe2QZfpOM1m4cMa7TOTvK2UyCAa6pwFFlWWPJ3pAfIE9kyhXE3p0QvUA==", "article"=>{"title"=>"sssss", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "number"=>"25616566", "photo"=>""}, "commit"=>"Save Article"}
+Unpermitted parameter: :adres
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'number' for Article.):
+  
+app/controllers/articles_controller.rb:35:in `create'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Article (20180701123324)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Article (20180701123324)

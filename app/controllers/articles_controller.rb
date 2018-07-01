@@ -40,7 +40,6 @@ class ArticlesController < ApplicationController
        
       private
         def article_params
-          params.require(:article).permit(:wifi, :breakfast,
-           :price, :title, :address, :photo, :text, :number, :rating)
+          params.require(:article).permit(:wifi, :breakfast, :price, :title, :address, :photo, :text, :number, :rating)
         end
 end
