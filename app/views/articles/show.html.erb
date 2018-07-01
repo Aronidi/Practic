@@ -32,7 +32,11 @@
     <strong>Адрес:</strong>
     <%= @article.adres %>
   </p>
+  <h2>Comments</h2>
+  <%= render @article.comments %>
 
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
 
   <%= link_to 'Редактировать', edit_article_path(@article) %> 
   <%= link_to 'Назад', articles_path %>
