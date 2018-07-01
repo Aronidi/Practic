@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
         @article = Article.find(params[:id])
     end
     def edit
+        @article = Article.find(params[:id])
     end
     def new
         @article = Article.new
@@ -20,6 +21,7 @@ class ArticlesController < ApplicationController
         end
       end
     def update
+        @article = Article.find(params[:id])
         if @article.update_attributes(article_params)
           redirect_to articles_path
         else

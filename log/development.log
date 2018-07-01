@@ -1297,3 +1297,115 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:17:46 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 55ms (Views: 48.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2018-07-01 17:17:48 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 47ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2018-07-01 17:17:52 +0300
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xDavD/jNG7V+nlceaklhPiIZg44uF53CRJtbZ75P91cuYVVu7SOk+ynpWVFS0YUsL+VoZczJeZoa2fvDIOGgkw==", "article"=>{"title"=>"ывваы", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"", "adres"=>"", "numder"=>"", "photo"=>""}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:24
+Unpermitted parameter: :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:18:05 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:18:24 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 73ms (Views: 60.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2018-07-01 17:18:26 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:9
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2018-07-01 17:18:35 +0300
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ihIgf3R7A35xAKplOZ3hryL2EZa5Vye+PN4YYuGGip1gRdoeYZW8MCZ3pCoBBQW9Lwr6fVuJw+ZinLjGfyjdWQ==", "article"=>{"title"=>"ыаыва", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"200", "adres"=>"", "numder"=>"22222", "photo"=>""}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:24
+Unpermitted parameter: :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 56ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/1" for 127.0.0.1 at 2018-07-01 17:18:39 +0300
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S/w7jYn4BtrNyII0mCvksjzsJkKppVrnB3LHae1z3m2m9aTX9cXYZgG/Lwy7xmKO6eBrgouMpSDs8en6qQJqug==", "article"=>{"title"=>"ыаыва", "text"=>"", "rating"=>"", "breakfast"=>"", "wifi"=>"", "price"=>"200", "adres"=>"ывываа", "numder"=>"", "photo"=>""}, "commit"=>"Update Article", "id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:24
+Unpermitted parameter: :numder
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+  [1m[36mArticle Update (2.7ms)[0m  [1m[33mUPDATE "articles" SET "price" = ?, "title" = ?, "adres" = ?, "photo" = ?, "updated_at" = ? WHERE "articles"."id" = ?[0m  [["price", 200], ["title", "ыаыва"], ["adres", "ывываа"], ["photo", ""], ["updated_at", "2018-07-01 14:18:39.386210"], ["id", 1]]
+  ↳ app/controllers/articles_controller.rb:25
+  [1m[35m (19.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articles_controller.rb:25
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 33ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-07-01 17:18:39 +0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:10
+  Rendered articles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-07-01 17:18:45 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:6
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.1ms)
+
+
