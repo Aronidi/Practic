@@ -3,5 +3,5 @@ class Article < ApplicationRecord
     validates :adres, presence: true, length: { maximum: 75 }
     validates :price, presence: true,  numericality: { greater_than: 0 }
     
-    has_many :comments
+    has_many :comments, dependent: :destroy
 end
